@@ -1,0 +1,2900 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;typescript&quot;,&quot;javascript&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="shell">shell</a>
+              <a href="#" data-language-name="typescript">typescript</a>
+              <a href="#" data-language-name="javascript">javascript</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc" class="toc-list-h1">
+          <li>
+            <a href="#catapult-rest-api-reference" class="toc-h1 toc-link" data-title="catapult-rest-api-reference">Catapult REST API Reference</a>
+          </li>
+          <li>
+            <a href="#account" class="toc-h1 toc-link" data-title="account">Account</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#account-information" class="toc-h2 toc-link" data-title="account-information">Account information</a>
+                  </li>
+                  <li>
+                    <a href="#account-list" class="toc-h2 toc-link" data-title="account-list">Account list</a>
+                  </li>
+                  <li>
+                    <a href="#incoming-transactions" class="toc-h2 toc-link" data-title="incoming-transactions">Incoming transactions</a>
+                  </li>
+                  <li>
+                    <a href="#outgoing-transactions" class="toc-h2 toc-link" data-title="outgoing-transactions">Outgoing transactions</a>
+                  </li>
+                  <li>
+                    <a href="#confirmed-transactions" class="toc-h2 toc-link" data-title="confirmed-transactions">Confirmed transactions</a>
+                  </li>
+                  <li>
+                    <a href="#unconfirmed-transactions" class="toc-h2 toc-link" data-title="unconfirmed-transactions">Unconfirmed transactions</a>
+                  </li>
+                  <li>
+                    <a href="#multisig-account" class="toc-h2 toc-link" data-title="multisig-account">Multisig account</a>
+                  </li>
+                  <li>
+                    <a href="#multisig-account-graph" class="toc-h2 toc-link" data-title="multisig-account-graph">Multisig account graph</a>
+                  </li>
+                  <li>
+                    <a href="#namespace-by-account-id" class="toc-h2 toc-link" data-title="namespace-by-account-id">Namespace by account id</a>
+                  </li>
+                  <li>
+                    <a href="#namespace-by-account-address" class="toc-h2 toc-link" data-title="namespace-by-account-address">Namespace by account address</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#blocks" class="toc-h1 toc-link" data-title="blocks">Blocks</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#block-information" class="toc-h2 toc-link" data-title="block-information">Block information</a>
+                  </li>
+                  <li>
+                    <a href="#request-block-height" class="toc-h2 toc-link" data-title="request-block-height">Request block height</a>
+                  </li>
+                  <li>
+                    <a href="#get-transactions" class="toc-h2 toc-link" data-title="get-transactions">Get transactions</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#chain" class="toc-h1 toc-link" data-title="chain">Chain</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#height" class="toc-h2 toc-link" data-title="height">Height</a>
+                  </li>
+                  <li>
+                    <a href="#score" class="toc-h2 toc-link" data-title="score">Score</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#diagnostic" class="toc-h1 toc-link" data-title="diagnostic">Diagnostic</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#storage-info" class="toc-h2 toc-link" data-title="storage-info">Storage info</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#mosaic" class="toc-h1 toc-link" data-title="mosaic">Mosaic</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#mosaic-information" class="toc-h2 toc-link" data-title="mosaic-information">Mosaic information</a>
+                  </li>
+                  <li>
+                    <a href="#mosaic-list" class="toc-h2 toc-link" data-title="mosaic-list">Mosaic list</a>
+                  </li>
+                  <li>
+                    <a href="#mosaic-name" class="toc-h2 toc-link" data-title="mosaic-name">Mosaic name</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#namespace" class="toc-h1 toc-link" data-title="namespace">Namespace</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#namespace-information" class="toc-h2 toc-link" data-title="namespace-information">Namespace information</a>
+                  </li>
+                  <li>
+                    <a href="#namespace-list" class="toc-h2 toc-link" data-title="namespace-list">Namespace list</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#transaction" class="toc-h1 toc-link" data-title="transaction">Transaction</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#transaction-information" class="toc-h2 toc-link" data-title="transaction-information">Transaction information</a>
+                  </li>
+                  <li>
+                    <a href="#transaction-list" class="toc-h2 toc-link" data-title="transaction-list">Transaction list</a>
+                  </li>
+                  <li>
+                    <a href="#announce-abt" class="toc-h2 toc-link" data-title="announce-abt">Announce ABT</a>
+                  </li>
+                  <li>
+                    <a href="#announce-cosignature-transaction" class="toc-h2 toc-link" data-title="announce-cosignature-transaction">Announce cosignature transaction</a>
+                  </li>
+                  <li>
+                    <a href="#transaction-status" class="toc-h2 toc-link" data-title="transaction-status">Transaction status</a>
+                  </li>
+                  <li>
+                    <a href="#transaction-statuses-list" class="toc-h2 toc-link" data-title="transaction-statuses-list">Transaction statuses list</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#network" class="toc-h1 toc-link" data-title="network">Network</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#network-information" class="toc-h2 toc-link" data-title="network-information">Network information</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#models" class="toc-h1 toc-link" data-title="models">Models</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#accountinfodto" class="toc-h2 toc-link" data-title="accountinfodto">AccountInfoDTO</a>
+                  </li>
+                  <li>
+                    <a href="#accountmetadto" class="toc-h2 toc-link" data-title="accountmetadto">AccountMetaDTO</a>
+                  </li>
+                  <li>
+                    <a href="#accountdto" class="toc-h2 toc-link" data-title="accountdto">AccountDTO</a>
+                  </li>
+                  <li>
+                    <a href="#multisigaccountgraphinfodto" class="toc-h2 toc-link" data-title="multisigaccountgraphinfodto">MultisigAccountGraphInfoDTO</a>
+                  </li>
+                  <li>
+                    <a href="#multisigaccountinfodto" class="toc-h2 toc-link" data-title="multisigaccountinfodto">MultisigAccountInfoDTO</a>
+                  </li>
+                  <li>
+                    <a href="#multisig" class="toc-h2 toc-link" data-title="multisig">Multisig</a>
+                  </li>
+                  <li>
+                    <a href="#announcetransactioninfodto" class="toc-h2 toc-link" data-title="announcetransactioninfodto">AnnounceTransactionInfoDTO</a>
+                  </li>
+                  <li>
+                    <a href="#transactionstatusdto" class="toc-h2 toc-link" data-title="transactionstatusdto">TransactionStatusDTO</a>
+                  </li>
+                  <li>
+                    <a href="#mosaicdto" class="toc-h2 toc-link" data-title="mosaicdto">MosaicDTO</a>
+                  </li>
+                  <li>
+                    <a href="#mosaicinfodto" class="toc-h2 toc-link" data-title="mosaicinfodto">MosaicInfoDTO</a>
+                  </li>
+                  <li>
+                    <a href="#namespacemosaicmetadto" class="toc-h2 toc-link" data-title="namespacemosaicmetadto">NamespaceMosaicMetaDTO</a>
+                  </li>
+                  <li>
+                    <a href="#mosaicdefinitiondto" class="toc-h2 toc-link" data-title="mosaicdefinitiondto">MosaicDefinitionDTO</a>
+                  </li>
+                  <li>
+                    <a href="#mosaicpropertiesdto" class="toc-h2 toc-link" data-title="mosaicpropertiesdto">MosaicPropertiesDTO</a>
+                  </li>
+                  <li>
+                    <a href="#mosaicnamedto" class="toc-h2 toc-link" data-title="mosaicnamedto">MosaicNameDTO</a>
+                  </li>
+                  <li>
+                    <a href="#namespaceinfodto" class="toc-h2 toc-link" data-title="namespaceinfodto">NamespaceInfoDTO</a>
+                  </li>
+                  <li>
+                    <a href="#namespacedto" class="toc-h2 toc-link" data-title="namespacedto">NamespaceDTO</a>
+                  </li>
+                  <li>
+                    <a href="#namespacenamedto" class="toc-h2 toc-link" data-title="namespacenamedto">NamespaceNameDTO</a>
+                  </li>
+                  <li>
+                    <a href="#blockinfodto" class="toc-h2 toc-link" data-title="blockinfodto">BlockInfoDTO</a>
+                  </li>
+                  <li>
+                    <a href="#blockmetadto" class="toc-h2 toc-link" data-title="blockmetadto">BlockMetaDTO</a>
+                  </li>
+                  <li>
+                    <a href="#blockdto" class="toc-h2 toc-link" data-title="blockdto">BlockDTO</a>
+                  </li>
+                  <li>
+                    <a href="#heightdto" class="toc-h2 toc-link" data-title="heightdto">HeightDTO</a>
+                  </li>
+                  <li>
+                    <a href="#blockchainscoredto" class="toc-h2 toc-link" data-title="blockchainscoredto">BlockchainScoreDTO</a>
+                  </li>
+                  <li>
+                    <a href="#blockchainstorageinfodto" class="toc-h2 toc-link" data-title="blockchainstorageinfodto">BlockchainStorageInfoDTO</a>
+                  </li>
+                  <li>
+                    <a href="#networktypedto" class="toc-h2 toc-link" data-title="networktypedto">NetworkTypeDTO</a>
+                  </li>
+                  <li>
+                    <a href="#mosaicids" class="toc-h2 toc-link" data-title="mosaicids">mosaicIds</a>
+                  </li>
+                  <li>
+                    <a href="#namespaceids" class="toc-h2 toc-link" data-title="namespaceids">namespaceIds</a>
+                  </li>
+                  <li>
+                    <a href="#addresses" class="toc-h2 toc-link" data-title="addresses">addresses</a>
+                  </li>
+                  <li>
+                    <a href="#transactionids" class="toc-h2 toc-link" data-title="transactionids">transactionIds</a>
+                  </li>
+                  <li>
+                    <a href="#transactionhashes" class="toc-h2 toc-link" data-title="transactionhashes">transactionHashes</a>
+                  </li>
+                  <li>
+                    <a href="#transactionpayload" class="toc-h2 toc-link" data-title="transactionpayload">transactionPayload</a>
+                  </li>
+                  <li>
+                    <a href="#uint64dto" class="toc-h2 toc-link" data-title="uint64dto">UInt64DTO</a>
+                  </li>
+              </ul>
+          </li>
+      </div>
+        <ul class="toc-footer">
+            <li><a href='http://mijin.io/en/catapult'>Sign Up Catapult Developers Preview</a></li>
+            <li><a href='https://github.com/lord/slate'>Theme Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='catapult-rest-api-reference'>Catapult REST API Reference</h1>
+<p><strong>Version:</strong> 0.7.7</p>
+
+<p><strong>License:</strong> <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a></p>
+
+<p><a href="https://nemtech.github.io/">Find out more about NEM2</a></p>
+<h1 id='account'>Account</h1><h3 id='account-information'>Account information</h3>
+<p><code>GET /account/{accountId}</code></p>
+
+<p><strong>Summary:</strong> Get account information</p>
+
+<p><strong>Description:</strong> Returns AccountInfo for an account.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>accountId</td>
+<td>path</td>
+<td>Account address or publicKey.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td><a href="#accountinfodto">AccountInfoDTO</a></td>
+</tr>
+<tr>
+<td>404</td>
+<td>resource not found</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='account-list'>Account list</h3>
+<p><code>POST /account</code></p>
+
+<p><strong>Summary:</strong> Get accounts information</p>
+
+<p><strong>Description:</strong> Returns AccountsInfo for different accounts.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>addresses</td>
+<td>body</td>
+<td>Array of addresses.</td>
+<td>Yes</td>
+<td><a href="#addresses">addresses</a></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ <a href="#accountinfodto">AccountInfoDTO</a> ]</td>
+</tr>
+<tr>
+<td>400</td>
+<td>invalid content</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='incoming-transactions'>Incoming transactions</h3>
+<p><code>GET /account/{publicKey}/transactions/incoming</code></p>
+
+<p><strong>Summary:</strong> Get incoming transactions information</p>
+
+<p><strong>Description:</strong> Gets an array of transactions for which an account is the recipient. A transaction is said to be incoming regarding an account if the account is the recipient of a transaction.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>publicKey</td>
+<td>path</td>
+<td>Account publicKey.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>query</td>
+<td>The number of transactions to return. Should be between 10 and 100, otherwise 10.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>id</td>
+<td>query</td>
+<td>Identifier of the transaction after which we want the transactions to be returned.</td>
+<td>No</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ object ]</td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='outgoing-transactions'>Outgoing transactions</h3>
+<p><code>GET /account/{publicKey}/transactions/outgoing</code></p>
+
+<p><strong>Summary:</strong> Get outgoing transactions information</p>
+
+<p><strong>Description:</strong> Gets an array of transactions for which an account is the sender. A transaction is said to be outgoing regarding an account if the account is the sender of a transaction.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>publicKey</td>
+<td>path</td>
+<td>Account publicKey.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>query</td>
+<td>The number of transactions to return. Should be between 10 and 100, otherwise 10.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>id</td>
+<td>query</td>
+<td>Identifier of the transaction after which we want the transactions to be returned.</td>
+<td>No</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ object ]</td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='confirmed-transactions'>Confirmed transactions</h3>
+<p><code>GET /account/{publicKey}/transactions</code></p>
+
+<p><strong>Summary:</strong> Get confirmed transactions information</p>
+
+<p><strong>Description:</strong> Gets an array of confirmed transaction for which an account is signer or recipient.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>publicKey</td>
+<td>path</td>
+<td>Account publicKey.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>query</td>
+<td>The number of transactions to return. Should be between 10 and 100, otherwise 10.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>id</td>
+<td>query</td>
+<td>Identifier of the transaction after which we want the transactions to be returned.</td>
+<td>No</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ object ]</td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='unconfirmed-transactions'>Unconfirmed transactions</h3>
+<p><code>GET /account/{publicKey}/transactions/unconfirmed</code></p>
+<h5 id='get'><strong><em>GET</em></strong></h5>
+<p><strong>Summary:</strong> Get unconfirmed transactions information</p>
+
+<p><strong>Description:</strong> Gets the array of transactions for which an account is the sender or receiver and which have not yet been included in a block.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>publicKey</td>
+<td>path</td>
+<td>Account publicKey.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>query</td>
+<td>The number of transactions to return. Should be between 10 and 100, otherwise 10.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>id</td>
+<td>query</td>
+<td>Identifier of the transaction after which we want the transactions to be returned.</td>
+<td>No</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ object ]</td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><code>GET /account/{publicKey}/transactions/partial</code></p>
+
+<p><strong>Summary:</strong> Get aggregate bonded transactions information</p>
+
+<p><strong>Description:</strong> Gets an array of aggregate bonded transactions for which an account is the sender or has signed the transaction. A transaction is said to be aggregate bonded regarding an account if announced but there are missing signatures.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>publicKey</td>
+<td>path</td>
+<td>Account publicKey.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>query</td>
+<td>The number of transactions to return. Should be between 10 and 100, otherwise 10.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>id</td>
+<td>query</td>
+<td>Identifier of the transaction after which we want the transactions to be returned.</td>
+<td>No</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ object ]</td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='multisig-account'>Multisig account</h3>
+<p><code>GET /account/{accountId}/multisig</code></p>
+
+<p><strong>Summary:</strong> Get multisig account information</p>
+
+<p><strong>Description:</strong> Returns MultisigAccountInfo for an account.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>accountId</td>
+<td>path</td>
+<td>Account address or public key.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td><a href="#multisigaccountinfodto">MultisigAccountInfoDTO</a></td>
+</tr>
+<tr>
+<td>404</td>
+<td>resource not found</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='multisig-account-graph'>Multisig account graph</h3>
+<p><code>GET /account/{accountId}/multisig/graph</code></p>
+
+<p><strong>Summary:</strong> Get multisig account graph information</p>
+
+<p><strong>Description:</strong> Returns MultisigAccountGraphInfo for an account.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>accountId</td>
+<td>path</td>
+<td>Account address or public key.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ <a href="#multisigaccountgraphinfodto">MultisigAccountGraphInfoDTO</a> ]</td>
+</tr>
+<tr>
+<td>404</td>
+<td>resource not found</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='namespace-by-account-id'>Namespace by account id</h3>
+<p><code>GET /account/{accountId}/namespaces</code></p>
+
+<p><strong>Summary:</strong> Get namespaces an account owns</p>
+
+<p><strong>Description:</strong> Returns an array of NamespaceInfo for an account.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>accountId</td>
+<td>path</td>
+<td>Account address or public key.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>query</td>
+<td>The number of namespaces to return.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>id</td>
+<td>query</td>
+<td>Identifier of the namespace after which we want the transactions to be returned.</td>
+<td>No</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ <a href="#namespaceinfodto">NamespaceInfoDTO</a> ]</td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='namespace-by-account-address'>Namespace by account address</h3>
+<p><code>POST /account/namespaces</code></p>
+
+<p><strong>Summary:</strong> Get namespaces information</p>
+
+<p><strong>Description:</strong> Returns an array of NamespaceInfo for a given set of addresses.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>addresses</td>
+<td>body</td>
+<td>Accounts address array.</td>
+<td>Yes</td>
+<td><a href="#addresses">addresses</a></td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>query</td>
+<td>The number of namespaces to return.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>id</td>
+<td>query</td>
+<td>Identifier of the namespace after which we want the transactions to be returned.</td>
+<td>No</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ <a href="#namespaceinfodto">NamespaceInfoDTO</a> ]</td>
+</tr>
+<tr>
+<td>400</td>
+<td>invalid content</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='blocks'>Blocks</h1><h3 id='block-information'>Block information</h3>
+<p><code>GET /block/{height}</code></p>
+
+<p><strong>Summary:</strong> Get block information</p>
+
+<p><strong>Description:</strong> Returns BlockInfo for a given block height.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>height</td>
+<td>path</td>
+<td>Block height.</td>
+<td>Yes</td>
+<td>long</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td><a href="#blockinfodto">BlockInfoDTO</a></td>
+</tr>
+<tr>
+<td>404</td>
+<td>resource not found</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='request-block-height'>Request block height</h3>
+<p><code>GET /blocks/{height}/limit/{limit}</code></p>
+
+<p><strong>Summary:</strong> Get blocks information</p>
+
+<p><strong>Description:</strong> Returns an array of BlockInfo for a given block height and limit.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>height</td>
+<td>path</td>
+<td>Block height.</td>
+<td>Yes</td>
+<td>long</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>path</td>
+<td>Number of following blocks to be returned.</td>
+<td>Yes</td>
+<td>integer (int)</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ <a href="#blockinfodto">BlockInfoDTO</a> ]</td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='get-transactions'>Get transactions</h3>
+<p><code>GET /block/{height}/transactions</code></p>
+
+<p><strong>Summary:</strong> Get transactions from a block</p>
+
+<p><strong>Description:</strong> Returns array of transactions included in a block for a block height.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>height</td>
+<td>path</td>
+<td>Block height</td>
+<td>Yes</td>
+<td>long</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>query</td>
+<td>The number of transactions to return. Should be between 10 and 100, otherwise 10.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>id</td>
+<td>query</td>
+<td>Identifier of the transaction after which we want the transactions to be returned.</td>
+<td>No</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ object ]</td>
+</tr>
+<tr>
+<td>404</td>
+<td>resource not found</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='chain'>Chain</h1><h3 id='height'>Height</h3>
+<p><code>GET /chain/height</code></p>
+
+<p><strong>Summary:</strong> Get the current height of the chain</p>
+
+<p><strong>Description:</strong> Returns the current blockchain height.</p>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td><a href="#heightdto">HeightDTO</a></td>
+</tr>
+</tbody></table>
+<h3 id='score'>Score</h3>
+<p><code>GET /chain/score</code></p>
+
+<p><strong>Summary:</strong> Get the current score of the chain</p>
+
+<p><strong>Description:</strong> Returns the current chain score.</p>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td><a href="#blockchainscoredto">BlockchainScoreDTO</a></td>
+</tr>
+</tbody></table>
+<h1 id='diagnostic'>Diagnostic</h1><h3 id='storage-info'>Storage info</h3>
+<p><code>GET /diagnostic/storage</code></p>
+
+<p><strong>Summary:</strong> Get the storage information</p>
+
+<p><strong>Description:</strong> Returns statistical information about the blockchain.</p>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td><a href="#blockchainstorageinfodto">BlockchainStorageInfoDTO</a></td>
+</tr>
+</tbody></table>
+<h1 id='mosaic'>Mosaic</h1><h3 id='mosaic-information'>Mosaic information</h3>
+<p><code>GET /mosaic/{mosaicId}</code></p>
+
+<p><strong>Summary:</strong> Get mosaic information</p>
+
+<p><strong>Description:</strong> Returns MosaicInfo for a given mosaicId.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>mosaicId</td>
+<td>path</td>
+<td>Mosaic identifier.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td><a href="#mosaicinfodto">MosaicInfoDTO</a></td>
+</tr>
+<tr>
+<td>404</td>
+<td>resource not found</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='mosaic-list'>Mosaic list</h3>
+<p><code>POST /mosaic</code></p>
+
+<p><strong>Summary:</strong> Get information for a set of mosaics</p>
+
+<p><strong>Description:</strong> Returns MosaicInfo for a given set of mosaicIds.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>mosaicIds</td>
+<td>body</td>
+<td>Array of mosaicIds.</td>
+<td>Yes</td>
+<td><a href="#mosaicids">mosaicIds</a></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ <a href="#mosaicinfodto">MosaicInfoDTO</a> ]</td>
+</tr>
+<tr>
+<td>400</td>
+<td>invalid content</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='mosaic-name'>Mosaic name</h3>
+<p><code>POST /mosaic/names</code></p>
+
+<p><strong>Summary:</strong> Get readable names for a set of mosaics</p>
+
+<p><strong>Description:</strong> Returns names for mosaics.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>mosaicIds</td>
+<td>body</td>
+<td>Array of mosaicIds.</td>
+<td>Yes</td>
+<td><a href="#mosaicids">mosaicIds</a></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ <a href="#mosaicnamedto">MosaicNameDTO</a> ]</td>
+</tr>
+<tr>
+<td>400</td>
+<td>invalid content</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='namespace'>Namespace</h1><h4 id='namespace-namespaceid-mosaics'>/namespace/{namespaceId}/mosaics</h4>
+<p><code>GET /namespace/{namespaceId}/mosaics</code></p>
+
+<p><strong>Summary:</strong> Get mosaics information.</p>
+
+<p><strong>Description:</strong> Returns an array of MosaicInfo from mosaics created under provided namespace.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>namespaceId</td>
+<td>path</td>
+<td>Namespace identifier.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>query</td>
+<td>The number of mosaics to return.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>id</td>
+<td>query</td>
+<td>Identifier of the mosaic after which we want the transactions to be returned.</td>
+<td>No</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ <a href="#mosaicinfodto">MosaicInfoDTO</a> ]</td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='namespace-information'>Namespace information</h3>
+<p><code>GET /namespace/{namespaceId}</code></p>
+
+<p><strong>Summary:</strong> Get namespace information</p>
+
+<p><strong>Description:</strong> Returns NamespaceInfo for a given namespaceId.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>namespaceId</td>
+<td>path</td>
+<td>Namespace identifier.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td><a href="#namespaceinfodto">NamespaceInfoDTO</a></td>
+</tr>
+<tr>
+<td>404</td>
+<td>resource not found</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='namespace-list'>Namespace list</h3>
+<p><code>POST /namespace/names</code></p>
+
+<p><strong>Summary:</strong> Get readable names for a set of namespaces</p>
+
+<p><strong>Description:</strong> Returns names for namespaces.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>namespaceIds</td>
+<td>body</td>
+<td>Array of namespaceIds.</td>
+<td>Yes</td>
+<td><a href="#namespaceids">namespaceIds</a></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ <a href="#namespacenamedto">NamespaceNameDTO</a> ]</td>
+</tr>
+<tr>
+<td>400</td>
+<td>invalid content</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='transaction'>Transaction</h1><h3 id='transaction-information'>Transaction information</h3>
+<p><code>GET /transaction/{transactionId}</code></p>
+
+<p><strong>Summary:</strong> Get transaction information</p>
+
+<p><strong>Description:</strong> Returns transaction given its transactionId or hash.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>transactionId</td>
+<td>path</td>
+<td>TransactionId or hash.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>object</td>
+</tr>
+<tr>
+<td>404</td>
+<td>resource not found</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='transaction-list'>Transaction list</h3>
+<p><code>POST /transaction</code></p>
+
+<p><strong>Summary:</strong> Get transactions information</p>
+
+<p><strong>Description:</strong> Returns transaction information for a given set of transactionId or hash.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>transactionIds</td>
+<td>body</td>
+<td>Array of transactionIds or hashes.</td>
+<td>Yes</td>
+<td><a href="#transactionids">transactionIds</a></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ object ]</td>
+</tr>
+<tr>
+<td>400</td>
+<td>invalid content</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id='put'><strong><em>PUT</em></strong></h5>
+<p><strong>Summary:</strong> Announce a new transaction</p>
+
+<p><strong>Description:</strong> Announces a transaction to the network.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>payload</td>
+<td>body</td>
+<td>Transaction payload.</td>
+<td>Yes</td>
+<td><a href="#transactionpayload">transactionPayload</a></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>202</td>
+<td>success</td>
+<td>object</td>
+</tr>
+<tr>
+<td>400</td>
+<td>invalid content</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='announce-abt'>Announce ABT</h3>
+<p><code>PUT /transaction/partial</code></p>
+
+<p><strong>Summary:</strong> Announce an aggregate bonded transaction</p>
+
+<p><strong>Description:</strong> Announces an aggregate bonded transaction to the network.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>payload</td>
+<td>body</td>
+<td>Transaction payload.</td>
+<td>Yes</td>
+<td><a href="#transactionpayload">transactionPayload</a></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>202</td>
+<td>success</td>
+<td>object</td>
+</tr>
+<tr>
+<td>400</td>
+<td>invalid content</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='announce-cosignature-transaction'>Announce cosignature transaction</h3>
+<p><code>PUT /transaction/cosignature</code></p>
+
+<p><strong>Summary:</strong> Announce a cosignature transaction</p>
+
+<p><strong>Description:</strong> Announces a cosignature transaction to the network.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>payload</td>
+<td>body</td>
+<td>Transaction payload.</td>
+<td>Yes</td>
+<td><a href="#transactionpayload">transactionPayload</a></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>202</td>
+<td>success</td>
+<td>object</td>
+</tr>
+<tr>
+<td>400</td>
+<td>invalid content</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='transaction-status'>Transaction status</h3>
+<p><code>GET /transaction/{hash}/status</code></p>
+
+<p><strong>Summary:</strong> Get transaction status</p>
+
+<p><strong>Description:</strong> Returns transaction status for a given transactionId or hash.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>hash</td>
+<td>path</td>
+<td>Transaction hash.</td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td><a href="#transactionstatusdto">TransactionStatusDTO</a></td>
+</tr>
+<tr>
+<td>404</td>
+<td>resource not found</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='transaction-statuses-list'>Transaction statuses list</h3>
+<p><code>POST /transaction/statuses</code></p>
+
+<p><strong>Summary:</strong> Get transactions status.</p>
+
+<p><strong>Description:</strong> Returns an array of transaction statuses for a given set of transactionId or hash.</p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>transactionHashes</td>
+<td>body</td>
+<td>Array of transactionIds or hashes.</td>
+<td>Yes</td>
+<td><a href="#transactionhashes">transactionHashes</a></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td>[ <a href="#transactionstatusdto">TransactionStatusDTO</a> ]</td>
+</tr>
+<tr>
+<td>400</td>
+<td>invalid content</td>
+<td></td>
+</tr>
+<tr>
+<td>409</td>
+<td>invalid argument</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='network'>Network</h1><h3 id='network-information'>Network information</h3>
+<p><code>GET /network</code></p>
+
+<p><strong>Summary:</strong> Get the current network type of the chain</p>
+
+<p><strong>Description:</strong> Returns the current network type.</p>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>success</td>
+<td><a href="#networktypedto">NetworkTypeDTO</a></td>
+</tr>
+</tbody></table>
+<h1 id='models'>Models</h1><h3 id='accountinfodto'>AccountInfoDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>meta</td>
+<td><a href="#accountmetadto">AccountMetaDTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>account</td>
+<td><a href="#accountdto">AccountDTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='accountmetadto'>AccountMetaDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>AccountMetaDTO</td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='accountdto'>AccountDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>address</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>addressHeight</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>publicKey</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>publicKeyHeight</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>mosaics</td>
+<td>[ <a href="#mosaicdto">MosaicDTO</a> ]</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>importance</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>importanceHeight</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='multisigaccountgraphinfodto'>MultisigAccountGraphInfoDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>level</td>
+<td>integer</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>multisigEntries</td>
+<td>[ <a href="#multisigaccountinfodto">MultisigAccountInfoDTO</a> ]</td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='multisigaccountinfodto'>MultisigAccountInfoDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>multisig</td>
+<td><a href="#multisig">Multisig</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='multisig'>Multisig</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>account</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>accountAddress</td>
+<td>string</td>
+<td></td>
+<td>No</td>
+</tr>
+<tr>
+<td>minApproval</td>
+<td>integer</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>minRemoval</td>
+<td>integer</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>cosignatories</td>
+<td>[ string ]</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>multisigAccounts</td>
+<td>[ string ]</td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='announcetransactioninfodto'>AnnounceTransactionInfoDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>message</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='transactionstatusdto'>TransactionStatusDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>group</td>
+<td>string</td>
+<td></td>
+<td>No</td>
+</tr>
+<tr>
+<td>status</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td></td>
+<td>No</td>
+</tr>
+<tr>
+<td>deadline</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>No</td>
+</tr>
+<tr>
+<td>height</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>No</td>
+</tr>
+</tbody></table>
+<h3 id='mosaicdto'>MosaicDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>amount</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='mosaicinfodto'>MosaicInfoDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>meta</td>
+<td><a href="#namespacemosaicmetadto">NamespaceMosaicMetaDTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>mosaic</td>
+<td><a href="#mosaicdefinitiondto">MosaicDefinitionDTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='namespacemosaicmetadto'>NamespaceMosaicMetaDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>active</td>
+<td>boolean</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>index</td>
+<td>integer</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>id</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='mosaicdefinitiondto'>MosaicDefinitionDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>namespaceId</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>mosaicId</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>supply</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>height</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>owner</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>properties</td>
+<td><a href="#mosaicpropertiesdto">MosaicPropertiesDTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>levy</td>
+<td>object</td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='mosaicpropertiesdto'>MosaicPropertiesDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>MosaicPropertiesDTO</td>
+<td>array</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='mosaicnamedto'>MosaicNameDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>parentId</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>mosaicId</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='namespaceinfodto'>NamespaceInfoDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>meta</td>
+<td><a href="#namespacemosaicmetadto">NamespaceMosaicMetaDTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>namespace</td>
+<td><a href="#namespacedto">NamespaceDTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='namespacedto'>NamespaceDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>type</td>
+<td>integer</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>depth</td>
+<td>integer</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>level0</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>level1</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>No</td>
+</tr>
+<tr>
+<td>level2</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>No</td>
+</tr>
+<tr>
+<td>parentId</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>owner</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>ownerAddress</td>
+<td>string</td>
+<td></td>
+<td>No</td>
+</tr>
+<tr>
+<td>startHeight</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>endHeight</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='namespacenamedto'>NamespaceNameDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>parentId</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>No</td>
+</tr>
+<tr>
+<td>namespaceId</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='blockinfodto'>BlockInfoDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>meta</td>
+<td><a href="#blockmetadto">BlockMetaDTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>block</td>
+<td><a href="#blockdto">BlockDTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='blockmetadto'>BlockMetaDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>hash</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>generationHash</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>totalFee</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>numTransactions</td>
+<td>number</td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='blockdto'>BlockDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>signature</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>signer</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>version</td>
+<td>number</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>type</td>
+<td>number</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>height</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>difficulty</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>previousBlockHash</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>blockTransactionsHash</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='heightdto'>HeightDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>height</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='blockchainscoredto'>BlockchainScoreDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>scoreHigh</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>scoreLow</td>
+<td><a href="#uint64dto">UInt64DTO</a></td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='blockchainstorageinfodto'>BlockchainStorageInfoDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>numBlocks</td>
+<td>integer</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>numTransactions</td>
+<td>integer</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>numAccounts</td>
+<td>integer</td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='networktypedto'>NetworkTypeDTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td></td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+<h3 id='mosaicids'>mosaicIds</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>mosaicIds</td>
+<td>[ string ]</td>
+<td></td>
+<td>No</td>
+</tr>
+</tbody></table>
+<h3 id='namespaceids'>namespaceIds</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>namespaceIds</td>
+<td>[ string ]</td>
+<td></td>
+<td>No</td>
+</tr>
+</tbody></table>
+<h3 id='addresses'>addresses</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>addresses</td>
+<td>[ string ]</td>
+<td></td>
+<td>No</td>
+</tr>
+</tbody></table>
+<h3 id='transactionids'>transactionIds</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>transactionIds</td>
+<td>[ string ]</td>
+<td></td>
+<td>No</td>
+</tr>
+</tbody></table>
+<h3 id='transactionhashes'>transactionHashes</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>hashes</td>
+<td>[ string ]</td>
+<td></td>
+<td>No</td>
+</tr>
+</tbody></table>
+<h3 id='transactionpayload'>transactionPayload</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>payload</td>
+<td>string</td>
+<td></td>
+<td>No</td>
+</tr>
+</tbody></table>
+<h3 id='uint64dto'>UInt64DTO</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>UInt64DTO</td>
+<td>array</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="shell">shell</a>
+                <a href="#" data-language-name="typescript">typescript</a>
+                <a href="#" data-language-name="javascript">javascript</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
